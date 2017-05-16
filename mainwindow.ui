@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="courselabel">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -40,7 +40,7 @@
      <enum>Qt::Horizontal</enum>
     </property>
    </widget>
-   <widget class="QComboBox" name="comboBox">
+   <widget class="QComboBox" name="courseselect">
     <property name="geometry">
      <rect>
       <x>80</x>
@@ -50,11 +50,11 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="hw1label">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>70</y>
+      <x>50</x>
+      <y>80</y>
       <width>59</width>
       <height>16</height>
      </rect>
@@ -63,21 +63,21 @@
      <string>HW 1</string>
     </property>
    </widget>
-   <widget class="QSpinBox" name="spinBox">
+   <widget class="QSpinBox" name="hw1box">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>70</y>
+      <x>120</x>
+      <y>80</y>
       <width>48</width>
       <height>24</height>
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QLabel" name="hw2label">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>100</y>
+      <x>50</x>
+      <y>120</y>
       <width>59</width>
       <height>16</height>
      </rect>
@@ -86,21 +86,21 @@
      <string>HW 2</string>
     </property>
    </widget>
-   <widget class="QSpinBox" name="spinBox_2">
+   <widget class="QSpinBox" name="hw2box">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>100</y>
+      <x>120</x>
+      <y>120</y>
       <width>48</width>
       <height>24</height>
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
+   <widget class="QLabel" name="hw3label">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>140</y>
+      <x>50</x>
+      <y>160</y>
       <width>59</width>
       <height>16</height>
      </rect>
@@ -109,21 +109,21 @@
      <string>HW 3</string>
     </property>
    </widget>
-   <widget class="QSpinBox" name="spinBox_3">
+   <widget class="QSpinBox" name="hw3box">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>140</y>
+      <x>120</x>
+      <y>160</y>
       <width>48</width>
       <height>24</height>
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="label_5">
+   <widget class="QLabel" name="overalllabel">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>300</y>
+      <x>260</x>
+      <y>360</y>
       <width>111</width>
       <height>16</height>
      </rect>
@@ -132,21 +132,21 @@
      <string>Overall Score: 0</string>
     </property>
    </widget>
-   <widget class="QSpinBox" name="spinBox_4">
+   <widget class="QSpinBox" name="hw6box">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>240</y>
+      <x>120</x>
+      <y>280</y>
       <width>48</width>
       <height>24</height>
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="label_6">
+   <widget class="QLabel" name="hw6label">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>240</y>
+      <x>50</x>
+      <y>280</y>
       <width>59</width>
       <height>16</height>
      </rect>
@@ -155,11 +155,11 @@
      <string>HW 6</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_7">
+   <widget class="QLabel" name="hw4label">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>170</y>
+      <x>50</x>
+      <y>200</y>
       <width>59</width>
       <height>16</height>
      </rect>
@@ -168,21 +168,21 @@
      <string>HW 4</string>
     </property>
    </widget>
-   <widget class="QSpinBox" name="spinBox_5">
+   <widget class="QSpinBox" name="hw4box">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>170</y>
+      <x>120</x>
+      <y>200</y>
       <width>48</width>
       <height>24</height>
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="label_8">
+   <widget class="QLabel" name="hw5label">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>200</y>
+      <x>50</x>
+      <y>240</y>
       <width>59</width>
       <height>16</height>
      </rect>
@@ -191,21 +191,21 @@
      <string>HW 5</string>
     </property>
    </widget>
-   <widget class="QSpinBox" name="spinBox_6">
+   <widget class="QSpinBox" name="hw5box">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>200</y>
+      <x>120</x>
+      <y>240</y>
       <width>48</width>
       <height>24</height>
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="label_9">
+   <widget class="QLabel" name="hw8label">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>320</y>
+      <x>50</x>
+      <y>360</y>
       <width>59</width>
       <height>16</height>
      </rect>
@@ -214,11 +214,11 @@
      <string>HW 8</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_10">
+   <widget class="QLabel" name="hw7label">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>280</y>
+      <x>50</x>
+      <y>320</y>
       <width>59</width>
       <height>16</height>
      </rect>
@@ -227,41 +227,41 @@
      <string>HW 7</string>
     </property>
    </widget>
-   <widget class="QSpinBox" name="spinBox_7">
+   <widget class="QSpinBox" name="hw8box">
     <property name="geometry">
      <rect>
-      <x>80</x>
+      <x>120</x>
+      <y>360</y>
+      <width>48</width>
+      <height>24</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="hw7box">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
       <y>320</y>
       <width>48</width>
       <height>24</height>
      </rect>
     </property>
    </widget>
-   <widget class="QSpinBox" name="spinBox_8">
+   <widget class="QSpinBox" name="midterm3box">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>280</y>
+      <x>350</x>
+      <y>160</y>
       <width>48</width>
       <height>24</height>
      </rect>
     </property>
    </widget>
-   <widget class="QSpinBox" name="spinBox_9">
+   <widget class="QLabel" name="midterm3label">
     <property name="geometry">
      <rect>
-      <x>360</x>
-      <y>140</y>
-      <width>48</width>
-      <height>24</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_11">
-    <property name="geometry">
-     <rect>
-      <x>270</x>
-      <y>140</y>
+      <x>260</x>
+      <y>160</y>
       <width>81</width>
       <height>16</height>
      </rect>
@@ -270,11 +270,11 @@
      <string>Midterm 3</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_12">
+   <widget class="QLabel" name="midterm1label">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>70</y>
+      <x>260</x>
+      <y>80</y>
       <width>81</width>
       <height>16</height>
      </rect>
@@ -283,21 +283,21 @@
      <string>Midterm 1</string>
     </property>
    </widget>
-   <widget class="QSpinBox" name="spinBox_10">
+   <widget class="QSpinBox" name="midterm1box">
     <property name="geometry">
      <rect>
-      <x>360</x>
-      <y>70</y>
+      <x>350</x>
+      <y>80</y>
       <width>48</width>
       <height>24</height>
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="label_13">
+   <widget class="QLabel" name="midterm2label">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>100</y>
+      <x>260</x>
+      <y>120</y>
       <width>81</width>
       <height>16</height>
      </rect>
@@ -306,21 +306,21 @@
      <string>Midterm 2</string>
     </property>
    </widget>
-   <widget class="QSpinBox" name="spinBox_11">
+   <widget class="QSpinBox" name="midterm2box">
     <property name="geometry">
      <rect>
-      <x>360</x>
-      <y>100</y>
+      <x>350</x>
+      <y>120</y>
       <width>48</width>
       <height>24</height>
      </rect>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton">
+   <widget class="QRadioButton" name="schema1radio">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>220</y>
+      <x>260</x>
+      <y>290</y>
       <width>100</width>
       <height>20</height>
      </rect>
@@ -329,11 +329,11 @@
      <string>Schema 1</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_2">
+   <widget class="QRadioButton" name="schema2radio">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>250</y>
+      <x>260</x>
+      <y>320</y>
       <width>100</width>
       <height>20</height>
      </rect>
@@ -343,7 +343,6 @@
     </property>
    </widget>
   </widget>
-  <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
