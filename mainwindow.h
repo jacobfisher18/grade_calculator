@@ -15,6 +15,9 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+private slots:
+    void on_hw1box_valueChanged(int arg1);
+
 private:
     Ui::MainWindow *ui;
 };

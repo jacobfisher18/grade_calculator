@@ -13,6 +13,11 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">font: 13pt &quot;Avenir Next&quot;;
+background-color: rgb(234, 234, 234);
+color: rgb(103, 120, 156);</string>
+  </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QLabel" name="courselabel">
     <property name="geometry">
@@ -49,6 +54,9 @@
       <height>26</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid #222;</string>
+    </property>
    </widget>
    <widget class="QLabel" name="hw1label">
     <property name="geometry">
@@ -71,6 +79,9 @@
       <width>48</width>
       <height>24</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
     </property>
    </widget>
    <widget class="QLabel" name="hw2label">
@@ -117,6 +128,9 @@
       <width>48</width>
       <height>24</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
     </property>
    </widget>
    <widget class="QLabel" name="overalllabel">
