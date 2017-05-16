@@ -24,8 +24,8 @@ color: rgb(103, 120, 156);</string>
      <rect>
       <x>10</x>
       <y>20</y>
-      <width>59</width>
-      <height>16</height>
+      <width>47</width>
+      <height>18</height>
      </rect>
     </property>
     <property name="text">
@@ -51,7 +51,7 @@ color: rgb(103, 120, 156);</string>
       <x>70</x>
       <y>20</y>
       <width>421</width>
-      <height>26</height>
+      <height>22</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -61,10 +61,10 @@ color: rgb(103, 120, 156);</string>
    <widget class="QLabel" name="hw1label">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>20</x>
       <y>80</y>
-      <width>59</width>
-      <height>16</height>
+      <width>33</width>
+      <height>18</height>
      </rect>
     </property>
     <property name="text">
@@ -74,10 +74,10 @@ color: rgb(103, 120, 156);</string>
    <widget class="QSpinBox" name="hw1box">
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>200</x>
       <y>80</y>
-      <width>48</width>
-      <height>24</height>
+      <width>50</width>
+      <height>26</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -90,10 +90,10 @@ color: rgb(103, 120, 156);</string>
    <widget class="QLabel" name="hw2label">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>20</x>
       <y>120</y>
-      <width>59</width>
-      <height>16</height>
+      <width>33</width>
+      <height>18</height>
      </rect>
     </property>
     <property name="text">
@@ -103,10 +103,10 @@ color: rgb(103, 120, 156);</string>
    <widget class="QSpinBox" name="hw2box">
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>200</x>
       <y>120</y>
-      <width>48</width>
-      <height>24</height>
+      <width>50</width>
+      <height>26</height>
      </rect>
     </property>
     <property name="maximum">
@@ -116,10 +116,10 @@ color: rgb(103, 120, 156);</string>
    <widget class="QLabel" name="hw3label">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>20</x>
       <y>160</y>
-      <width>59</width>
-      <height>16</height>
+      <width>33</width>
+      <height>18</height>
      </rect>
     </property>
     <property name="text">
@@ -129,10 +129,10 @@ color: rgb(103, 120, 156);</string>
    <widget class="QSpinBox" name="hw3box">
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>200</x>
       <y>160</y>
-      <width>48</width>
-      <height>24</height>
+      <width>50</width>
+      <height>26</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -145,10 +145,10 @@ color: rgb(103, 120, 156);</string>
    <widget class="QLabel" name="overalllabel">
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>380</y>
-      <width>111</width>
-      <height>16</height>
+      <x>370</x>
+      <y>360</y>
+      <width>91</width>
+      <height>18</height>
      </rect>
     </property>
     <property name="text">
@@ -158,10 +158,10 @@ color: rgb(103, 120, 156);</string>
    <widget class="QSpinBox" name="hw6box">
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>200</x>
       <y>280</y>
-      <width>48</width>
-      <height>24</height>
+      <width>50</width>
+      <height>26</height>
      </rect>
     </property>
     <property name="maximum">
@@ -171,10 +171,10 @@ color: rgb(103, 120, 156);</string>
    <widget class="QLabel" name="hw6label">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>20</x>
       <y>280</y>
-      <width>59</width>
-      <height>16</height>
+      <width>33</width>
+      <height>18</height>
      </rect>
     </property>
     <property name="text">
@@ -184,10 +184,10 @@ color: rgb(103, 120, 156);</string>
    <widget class="QLabel" name="hw4label">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>20</x>
       <y>200</y>
-      <width>59</width>
-      <height>16</height>
+      <width>33</width>
+      <height>18</height>
      </rect>
     </property>
     <property name="text">
@@ -197,10 +197,10 @@ color: rgb(103, 120, 156);</string>
    <widget class="QSpinBox" name="hw4box">
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>200</x>
       <y>200</y>
-      <width>48</width>
-      <height>24</height>
+      <width>50</width>
+      <height>26</height>
      </rect>
     </property>
     <property name="maximum">
@@ -210,10 +210,10 @@ color: rgb(103, 120, 156);</string>
    <widget class="QLabel" name="hw5label">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>20</x>
       <y>240</y>
-      <width>59</width>
-      <height>16</height>
+      <width>33</width>
+      <height>18</height>
      </rect>
     </property>
     <property name="text">
@@ -223,10 +223,10 @@ color: rgb(103, 120, 156);</string>
    <widget class="QSpinBox" name="hw5box">
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>200</x>
       <y>240</y>
-      <width>48</width>
-      <height>24</height>
+      <width>50</width>
+      <height>26</height>
      </rect>
     </property>
     <property name="maximum">
@@ -236,10 +236,10 @@ color: rgb(103, 120, 156);</string>
    <widget class="QLabel" name="hw8label">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>20</x>
       <y>360</y>
-      <width>59</width>
-      <height>16</height>
+      <width>33</width>
+      <height>18</height>
      </rect>
     </property>
     <property name="text">
@@ -249,10 +249,10 @@ color: rgb(103, 120, 156);</string>
    <widget class="QLabel" name="hw7label">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>20</x>
       <y>320</y>
-      <width>59</width>
-      <height>16</height>
+      <width>33</width>
+      <height>18</height>
      </rect>
     </property>
     <property name="text">
@@ -262,10 +262,10 @@ color: rgb(103, 120, 156);</string>
    <widget class="QSpinBox" name="hw8box">
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>200</x>
       <y>360</y>
-      <width>48</width>
-      <height>24</height>
+      <width>50</width>
+      <height>26</height>
      </rect>
     </property>
     <property name="maximum">
@@ -275,10 +275,10 @@ color: rgb(103, 120, 156);</string>
    <widget class="QSpinBox" name="hw7box">
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>200</x>
       <y>320</y>
-      <width>48</width>
-      <height>24</height>
+      <width>50</width>
+      <height>26</height>
      </rect>
     </property>
     <property name="maximum">
@@ -288,10 +288,10 @@ color: rgb(103, 120, 156);</string>
    <widget class="QSpinBox" name="midterm3box">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>460</x>
       <y>160</y>
-      <width>48</width>
-      <height>24</height>
+      <width>50</width>
+      <height>26</height>
      </rect>
     </property>
     <property name="maximum">
@@ -303,8 +303,8 @@ color: rgb(103, 120, 156);</string>
      <rect>
       <x>260</x>
       <y>160</y>
-      <width>81</width>
-      <height>16</height>
+      <width>62</width>
+      <height>18</height>
      </rect>
     </property>
     <property name="text">
@@ -316,8 +316,8 @@ color: rgb(103, 120, 156);</string>
      <rect>
       <x>260</x>
       <y>80</y>
-      <width>81</width>
-      <height>16</height>
+      <width>62</width>
+      <height>18</height>
      </rect>
     </property>
     <property name="text">
@@ -327,10 +327,10 @@ color: rgb(103, 120, 156);</string>
    <widget class="QSpinBox" name="midterm1box">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>460</x>
       <y>80</y>
-      <width>48</width>
-      <height>24</height>
+      <width>50</width>
+      <height>26</height>
      </rect>
     </property>
     <property name="maximum">
@@ -342,8 +342,8 @@ color: rgb(103, 120, 156);</string>
      <rect>
       <x>260</x>
       <y>120</y>
-      <width>81</width>
-      <height>16</height>
+      <width>62</width>
+      <height>18</height>
      </rect>
     </property>
     <property name="text">
@@ -353,10 +353,10 @@ color: rgb(103, 120, 156);</string>
    <widget class="QSpinBox" name="midterm2box">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>460</x>
       <y>120</y>
-      <width>48</width>
-      <height>24</height>
+      <width>50</width>
+      <height>26</height>
      </rect>
     </property>
     <property name="maximum">
@@ -366,10 +366,10 @@ color: rgb(103, 120, 156);</string>
    <widget class="QRadioButton" name="schema1radio">
     <property name="geometry">
      <rect>
-      <x>260</x>
+      <x>270</x>
       <y>290</y>
-      <width>100</width>
-      <height>20</height>
+      <width>84</width>
+      <height>22</height>
      </rect>
     </property>
     <property name="text">
@@ -379,10 +379,10 @@ color: rgb(103, 120, 156);</string>
    <widget class="QRadioButton" name="schema2radio">
     <property name="geometry">
      <rect>
-      <x>260</x>
+      <x>270</x>
       <y>320</y>
-      <width>100</width>
-      <height>20</height>
+      <width>84</width>
+      <height>22</height>
      </rect>
     </property>
     <property name="text">
@@ -392,14 +392,190 @@ color: rgb(103, 120, 156);</string>
    <widget class="QLabel" name="overallscorelabel">
     <property name="geometry">
      <rect>
-      <x>260</x>
+      <x>270</x>
       <y>360</y>
-      <width>111</width>
-      <height>16</height>
+      <width>80</width>
+      <height>18</height>
      </rect>
     </property>
     <property name="text">
      <string>Overall Score</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="hw1slider">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>80</y>
+      <width>121</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="hw2slider">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>120</y>
+      <width>121</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="hw3slider">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>160</y>
+      <width>121</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="hw4slider">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>200</y>
+      <width>121</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="hw5slider">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>240</y>
+      <width>121</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="hw6slider">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>280</y>
+      <width>121</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="hw7slider">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>320</y>
+      <width>121</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="hw8slider">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>360</y>
+      <width>121</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="midterm1slider">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>80</y>
+      <width>121</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="midterm2slider">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>120</y>
+      <width>121</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="midterm3slider">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>160</y>
+      <width>121</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
     </property>
    </widget>
   </widget>

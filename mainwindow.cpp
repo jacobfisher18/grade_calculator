@@ -45,6 +45,13 @@ void hwboxChanged(int index, int& value, Ui::MainWindow* ui) {
 
 void midtermboxChanged(int index, int& value, Ui::MainWindow* ui) {
     midterms[index] = value;
+    //update slider in the ui
+    updateOverall(ui);
+}
+
+void sliderChanged(int index, int& value, Ui::MainWindow* ui) {
+    midterms[index] = value;
+    //update midterm box in the ui
     updateOverall(ui);
 }
 
@@ -101,4 +108,59 @@ void MainWindow::on_midterm2box_valueChanged(int arg1)
 void MainWindow::on_midterm3box_valueChanged(int arg1)
 {
     midtermboxChanged(2, arg1, ui);
+}
+
+void MainWindow::on_hw1slider_sliderMoved(int position)
+{
+    sliderChanged(0, position, ui);
+}
+
+void MainWindow::on_hw2slider_sliderMoved(int position)
+{
+    sliderChanged(1, position, ui);
+}
+
+void MainWindow::on_hw3slider_sliderMoved(int position)
+{
+    sliderChanged(2, position, ui);
+}
+
+void MainWindow::on_hw4slider_sliderMoved(int position)
+{
+    sliderChanged(3, position, ui);
+}
+
+void MainWindow::on_hw5slider_sliderMoved(int position)
+{
+    sliderChanged(4, position, ui);
+}
+
+void MainWindow::on_hw6slider_sliderMoved(int position)
+{
+    sliderChanged(5, position, ui);
+}
+
+void MainWindow::on_hw7slider_sliderMoved(int position)
+{
+    sliderChanged(6, position, ui);
+}
+
+void MainWindow::on_hw8slider_sliderMoved(int position)
+{
+    sliderChanged(7, position, ui);
+}
+
+void MainWindow::on_midterm1slider_sliderMoved(int position)
+{
+    //midterm slider changed
+}
+
+void MainWindow::on_midterm2slider_sliderMoved(int position)
+{
+    //midterm slider changed
+}
+
+void MainWindow::on_midterm3slider_sliderMoved(int position)
+{
+    //midterm slider changed
 }
