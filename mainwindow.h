@@ -32,6 +32,12 @@ private slots:
 
     void on_hw8box_valueChanged(int arg1);
 
+    void on_midterm1box_valueChanged(int arg1);
+
+    void on_midterm2box_valueChanged(int arg1);
+
+    void on_midterm3box_valueChanged(int arg1);
+
 private:
     Ui::MainWindow *ui;
 };

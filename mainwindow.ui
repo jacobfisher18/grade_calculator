@@ -48,7 +48,7 @@ color: rgb(103, 120, 156);</string>
    <widget class="QComboBox" name="courseselect">
     <property name="geometry">
      <rect>
-      <x>80</x>
+      <x>70</x>
       <y>20</y>
       <width>421</width>
       <height>26</height>
@@ -83,6 +83,9 @@ color: rgb(103, 120, 156);</string>
     <property name="styleSheet">
      <string notr="true"/>
     </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
    </widget>
    <widget class="QLabel" name="hw2label">
     <property name="geometry">
@@ -105,6 +108,9 @@ color: rgb(103, 120, 156);</string>
       <width>48</width>
       <height>24</height>
      </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
     </property>
    </widget>
    <widget class="QLabel" name="hw3label">
@@ -132,18 +138,21 @@ color: rgb(103, 120, 156);</string>
     <property name="styleSheet">
      <string notr="true"/>
     </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
    </widget>
    <widget class="QLabel" name="overalllabel">
     <property name="geometry">
      <rect>
       <x>260</x>
-      <y>360</y>
+      <y>380</y>
       <width>111</width>
       <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string>Overall Score: 0</string>
+     <string>0</string>
     </property>
    </widget>
    <widget class="QSpinBox" name="hw6box">
@@ -154,6 +163,9 @@ color: rgb(103, 120, 156);</string>
       <width>48</width>
       <height>24</height>
      </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
     </property>
    </widget>
    <widget class="QLabel" name="hw6label">
@@ -191,6 +203,9 @@ color: rgb(103, 120, 156);</string>
       <height>24</height>
      </rect>
     </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
    </widget>
    <widget class="QLabel" name="hw5label">
     <property name="geometry">
@@ -213,6 +228,9 @@ color: rgb(103, 120, 156);</string>
       <width>48</width>
       <height>24</height>
      </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
     </property>
    </widget>
    <widget class="QLabel" name="hw8label">
@@ -250,6 +268,9 @@ color: rgb(103, 120, 156);</string>
       <height>24</height>
      </rect>
     </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
    </widget>
    <widget class="QSpinBox" name="hw7box">
     <property name="geometry">
@@ -260,6 +281,9 @@ color: rgb(103, 120, 156);</string>
       <height>24</height>
      </rect>
     </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
    </widget>
    <widget class="QSpinBox" name="midterm3box">
     <property name="geometry">
@@ -269,6 +293,9 @@ color: rgb(103, 120, 156);</string>
       <width>48</width>
       <height>24</height>
      </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
     </property>
    </widget>
    <widget class="QLabel" name="midterm3label">
@@ -306,6 +333,9 @@ color: rgb(103, 120, 156);</string>
       <height>24</height>
      </rect>
     </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
    </widget>
    <widget class="QLabel" name="midterm2label">
     <property name="geometry">
@@ -328,6 +358,9 @@ color: rgb(103, 120, 156);</string>
       <width>48</width>
       <height>24</height>
      </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
     </property>
    </widget>
    <widget class="QRadioButton" name="schema1radio">
@@ -354,6 +387,19 @@ color: rgb(103, 120, 156);</string>
     </property>
     <property name="text">
      <string>Schema 2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="overallscorelabel">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>360</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Overall Score</string>
     </property>
    </widget>
   </widget>
