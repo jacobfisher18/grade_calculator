@@ -9,6 +9,7 @@ int midterms[3] = {}; //for the purpose of this program, the final is called mid
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    this->setFixedSize(600, 500);
 }
 
 MainWindow::~MainWindow()
