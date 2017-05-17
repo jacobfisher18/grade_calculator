@@ -6,6 +6,7 @@
 int homeworks[8] = {}; //homework scores
 int midterms[2] = {}; //midterm scores
 int final = 0; //final score
+bool schema1 = true; //if false, use schema2
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow)
 {
@@ -28,14 +29,22 @@ void updateOverall(Ui::MainWindow* ui) {
     }
     hwOverall /= 8;
 
-    //calculate overall midterm score
-    double midtermOverall = 0;
-    for (int i = 0; i < 2; i++) {
-        midtermOverall+=midterms[i];
-    }
-    midtermOverall /= 2;
 
-    overall = (hwOverall + midtermOverall + final) / 3;
+
+    if (schema1) {
+        overall = (0.25 * hwOverall) + (0.2 * midterms[0]) + (0.2 * midterms[1]) + (0.35 * final);
+    }
+
+    else {
+        //figure out higher midterm
+        int higherMidterm = 0;
+        if (midterms[0] > midterms[1])
+            higherMidterm = midterms[0];
+        else
+            higherMidterm = midterms[1];
+
+        overall = (0.25 * hwOverall) + (0.3 * higherMidterm) + (0.44 * final);
+    }
 
     ui->overalllabel->setText(QString::number(overall));
 }
@@ -191,5 +200,17 @@ void MainWindow::on_finalbox_valueChanged(int arg1)
 {
     final = arg1;
     ui->finalslider->setValue(arg1);
+    updateOverall(ui);
+}
+
+void MainWindow::on_schema1radio_clicked()
+{
+    schema1 = true;
+    updateOverall(ui);
+}
+
+void MainWindow::on_schema2radio_clicked()
+{
+    schema1 = false;
     updateOverall(ui);
 }

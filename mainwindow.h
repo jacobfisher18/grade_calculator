@@ -60,6 +60,10 @@ private slots:
 
     void on_finalbox_valueChanged(int arg1);
 
+    void on_schema1radio_clicked();
+
+    void on_schema2radio_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
