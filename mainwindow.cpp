@@ -3,8 +3,9 @@
 #include <iostream>
 
 //global variables
-int homeworks[8] = {};
-int midterms[3] = {}; //for the purpose of this program, the final is called midterm 3
+int homeworks[8] = {}; //homework scores
+int midterms[2] = {}; //midterm scores
+int final = 0; //final score
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow)
 {
@@ -29,37 +30,33 @@ void updateOverall(Ui::MainWindow* ui) {
 
     //calculate overall midterm score
     double midtermOverall = 0;
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < 2; i++) {
         midtermOverall+=midterms[i];
     }
-    midtermOverall /= 3;
+    midtermOverall /= 2;
 
-    overall = (hwOverall + midtermOverall) / 2;
+    overall = (hwOverall + midtermOverall + final) / 3;
 
     ui->overalllabel->setText(QString::number(overall));
 }
 
 void hwboxChanged(int index, int& value, Ui::MainWindow* ui) {
     homeworks[index] = value;
-    //update homework slider in the ui
     updateOverall(ui);
 }
 
 void midtermboxChanged(int index, int& value, Ui::MainWindow* ui) {
     midterms[index] = value;
-    //update midterm slider in the ui
     updateOverall(ui);
 }
 
 void hwsliderChanged(int index, int& value, Ui::MainWindow* ui) {
     homeworks[index] = value;
-    //update homework box in the ui
     updateOverall(ui);
 }
 
 void midtermsliderChanged(int index, int& value, Ui::MainWindow* ui) {
     midterms[index] = value;
-    //update homework box in the ui
     updateOverall(ui);
 }
 
@@ -123,12 +120,6 @@ void MainWindow::on_midterm2box_valueChanged(int arg1)
     ui->midterm2slider->setValue(arg1);
 }
 
-void MainWindow::on_midterm3box_valueChanged(int arg1)
-{
-    midtermboxChanged(2, arg1, ui);
-    ui->midterm3slider->setValue(arg1);
-}
-
 void MainWindow::on_hw1slider_sliderMoved(int position)
 {
     hwsliderChanged(0, position, ui);
@@ -189,8 +180,16 @@ void MainWindow::on_midterm2slider_sliderMoved(int position)
     ui->midterm2box->setValue(position);
 }
 
-void MainWindow::on_midterm3slider_sliderMoved(int position)
+void MainWindow::on_finalslider_sliderMoved(int position)
 {
-    midtermsliderChanged(2, position, ui);
-    ui->midterm3box->setValue(position);
+    final = position;
+    ui->finalbox->setValue(position);
+    updateOverall(ui);
+}
+
+void MainWindow::on_finalbox_valueChanged(int arg1)
+{
+    final = arg1;
+    ui->finalslider->setValue(arg1);
+    updateOverall(ui);
 }

@@ -36,8 +36,6 @@ private slots:
 
     void on_midterm2box_valueChanged(int arg1);
 
-    void on_midterm3box_valueChanged(int arg1);
-
     void on_hw1slider_sliderMoved(int position);
 
     void on_hw2slider_sliderMoved(int position);
@@ -58,7 +56,9 @@ private slots:
 
     void on_midterm2slider_sliderMoved(int position);
 
-    void on_midterm3slider_sliderMoved(int position);
+    void on_finalslider_sliderMoved(int position);
+
+    void on_finalbox_valueChanged(int arg1);
 
 private:
     Ui::MainWindow *ui;
