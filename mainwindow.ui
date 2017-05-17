@@ -375,6 +375,9 @@ color: rgb(103, 120, 156);</string>
     <property name="text">
      <string>Schema 1</string>
     </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QRadioButton" name="schema2radio">
     <property name="geometry">
