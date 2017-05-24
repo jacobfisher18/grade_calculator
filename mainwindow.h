@@ -64,6 +64,8 @@ private slots:
 
     void on_schema2radio_clicked();
 
+    void on_comboBox_currentIndexChanged(int index);
+
 private:
     Ui::MainWindow *ui;
 };

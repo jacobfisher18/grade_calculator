@@ -11,7 +11,10 @@ bool schema1 = true; //if false, use schema2
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    this->setFixedSize(600, 500);
+    this->setFixedSize(550, 500);
+
+    ui->comboBox->addItem("PIC 10B");
+    ui->comboBox->addItem("PIC 10C");
 }
 
 MainWindow::~MainWindow()
@@ -213,4 +216,63 @@ void MainWindow::on_schema2radio_clicked()
 {
     schema1 = false;
     updateOverall(ui);
+}
+
+void MainWindow::on_comboBox_currentIndexChanged(int index)
+{
+    if (index == 0) {
+        ui->apptitle->setText("Grade Calculator for PIC 10B");
+
+        ui->midterm2label->show();
+        ui->midterm2slider->show();
+        ui->midterm2box->show();
+
+        ui->hw4label->show();
+        ui->hw4slider->show();
+        ui->hw4box->show();
+
+        ui->hw5label->show();
+        ui->hw5slider->show();
+        ui->hw5box->show();
+
+        ui->hw6label->show();
+        ui->hw6slider->show();
+        ui->hw6box->show();
+
+        ui->hw7label->show();
+        ui->hw7slider->show();
+        ui->hw7box->show();
+
+        ui->hw8label->show();
+        ui->hw8slider->show();
+        ui->hw8box->show();
+    }
+
+    else {
+        ui->apptitle->setText("Grade Calculator for PIC 10C");
+
+        ui->midterm2label->hide();
+        ui->midterm2slider->hide();
+        ui->midterm2box->hide();
+
+        ui->hw4label->hide();
+        ui->hw4slider->hide();
+        ui->hw4box->hide();
+
+        ui->hw5label->hide();
+        ui->hw5slider->hide();
+        ui->hw5box->hide();
+
+        ui->hw6label->hide();
+        ui->hw6slider->hide();
+        ui->hw6box->hide();
+
+        ui->hw7label->hide();
+        ui->hw7slider->hide();
+        ui->hw7box->hide();
+
+        ui->hw8label->hide();
+        ui->hw8slider->hide();
+        ui->hw8box->hide();
+    }
 }
