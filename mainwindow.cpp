@@ -1,12 +1,16 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include <vector>
 #include <iostream>
 
+using std::vector;
+
 //global variables
-int homeworks[8] = {}; //homework scores
-int midterms[2] = {}; //midterm scores
+vector<int> homeworks(8, 0);
+vector<int> midterms(2, 0);
 int final = 0; //final score
 bool schema1 = true; //if false, use schema2
+bool pic10b = true; //if false, use pic10c
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow)
 {
@@ -24,29 +28,49 @@ MainWindow::~MainWindow()
 
 void updateOverall(Ui::MainWindow* ui) {
     double overall = 0;
+    int numHomeworks;
+
+    if (pic10b)
+        numHomeworks = 8;
+    else
+        numHomeworks = 3;
 
     //calculate overall homework score
     double hwOverall = 0;
-    for (int i = 0; i < 8; i++) {
+    //int numHomeworks = static_cast<int>(homeworks.size());
+    for (int i = 0; i < numHomeworks; i++) {
         hwOverall+=homeworks[i];
     }
-    hwOverall /= 8;
+    hwOverall /= numHomeworks;
 
+    //score for pic10b
+    if (pic10b) {
+        if (schema1) {
+            overall = (0.25 * hwOverall) + (0.2 * midterms[0]) + (0.2 * midterms[1]) + (0.35 * final);
+        }
 
+        else {
+            //figure out higher midterm
+            int higherMidterm = 0;
+            if (midterms[0] > midterms[1])
+                higherMidterm = midterms[0];
+            else
+                higherMidterm = midterms[1];
 
-    if (schema1) {
-        overall = (0.25 * hwOverall) + (0.2 * midterms[0]) + (0.2 * midterms[1]) + (0.35 * final);
+            overall = (0.25 * hwOverall) + (0.3 * higherMidterm) + (0.44 * final);
+        }
     }
 
+    //score for pic10c
     else {
-        //figure out higher midterm
-        int higherMidterm = 0;
-        if (midterms[0] > midterms[1])
-            higherMidterm = midterms[0];
-        else
-            higherMidterm = midterms[1];
+        if (schema1) {
+            overall = (0.25 * hwOverall) + (0.3 * midterms[0]) + (0.45 * final);
+        }
 
-        overall = (0.25 * hwOverall) + (0.3 * higherMidterm) + (0.44 * final);
+        else {
+            //drop the midterm
+            overall = (0.4 * hwOverall) + (0.6 * final);
+        }
     }
 
     ui->overalllabel->setText(QString::number(overall));
@@ -221,6 +245,10 @@ void MainWindow::on_schema2radio_clicked()
 void MainWindow::on_comboBox_currentIndexChanged(int index)
 {
     if (index == 0) {
+        pic10b = true;
+
+        updateOverall(ui);
+
         ui->apptitle->setText("Grade Calculator for PIC 10B");
 
         ui->midterm2label->show();
@@ -249,6 +277,10 @@ void MainWindow::on_comboBox_currentIndexChanged(int index)
     }
 
     else {
+        pic10b = false;
+
+        updateOverall(ui);
+
         ui->apptitle->setText("Grade Calculator for PIC 10C");
 
         ui->midterm2label->hide();
