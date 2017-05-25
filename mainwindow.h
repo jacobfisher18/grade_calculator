@@ -66,6 +66,10 @@ private slots:
 
     void on_comboBox_currentIndexChanged(int index);
 
+    void on_projectbox_valueChanged(int arg1);
+
+    void on_projectslider_sliderMoved(int position);
+
 private:
     Ui::MainWindow *ui;
 };
