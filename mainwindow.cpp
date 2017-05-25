@@ -5,6 +5,15 @@
 
 using std::vector;
 
+/*
+ * Potential To-Do:
+ * Add final project to pic10c
+ * Clean up code, comment code
+ * Make UI look and feel better
+ * Respond to keyboard presses
+ * Clean up ui widget names, variable names in general
+*/
+
 //global variables
 vector<int> homeworks(8, 0);
 vector<int> midterms(2, 0);
@@ -35,13 +44,17 @@ void updateOverall(Ui::MainWindow* ui) {
     else
         numHomeworks = 3;
 
-    //calculate overall homework score
+    //calculate overall homework score, dropping the lowest
     double hwOverall = 0;
+    int lowest = 100;
     //int numHomeworks = static_cast<int>(homeworks.size());
     for (int i = 0; i < numHomeworks; i++) {
+        if (homeworks[i] < lowest)
+            lowest = homeworks[i];
         hwOverall+=homeworks[i];
     }
-    hwOverall /= numHomeworks;
+    hwOverall -= lowest; //drop lowest score
+    hwOverall /= (numHomeworks-1);
 
     //score for pic10b
     if (pic10b) {

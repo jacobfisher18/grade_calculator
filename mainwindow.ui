@@ -15,7 +15,9 @@
   </property>
   <property name="styleSheet">
    <string notr="true">font: 13pt &quot;Avenir Next&quot;;
-color: rgb(103, 120, 156);</string>
+color: rgb(103, 120, 156);
+
+</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QLabel" name="courselabel">
@@ -534,7 +536,7 @@ color: rgb(103, 120, 156);</string>
      <enum>Qt::Horizontal</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="midterm2label_2">
+   <widget class="QLabel" name="finallabel">
     <property name="geometry">
      <rect>
       <x>270</x>
@@ -638,11 +640,9 @@ color: rgb(103, 120, 156);</string>
    <zorder>hw8slider</zorder>
    <zorder>midterm1slider</zorder>
    <zorder>midterm2slider</zorder>
-   <zorder>comboBox</zorder>
-   <zorder>midterm2label_2</zorder>
+   <zorder>finallabel</zorder>
    <zorder>finalslider</zorder>
    <zorder>finalbox</zorder>
-   <zorder>comboBox</zorder>
    <zorder>comboBox</zorder>
    <zorder>apptitle</zorder>
   </widget>
