@@ -5,14 +5,6 @@
 
 using std::vector;
 
-/*
- * Potential To-Do:
- * Add final project to pic10c
- * Clean up code, variable names, comment code
- * Make UI look and feel better
- * Respond to keyboard presses
-*/
-
 //global variables
 vector<int> homeworks(8, 0); //8 integers, initially all set to 0
 vector<int> midterms(2, 0); //2 integers, initially both set to 0
@@ -91,13 +83,13 @@ void updateOverall(Ui::MainWindow* ui) {
 
         //schema1 score
         if (schema1) {
-            overall = (0.25 * hwOverall) + (0.3 * midterms[0]) + (0.45 * final);
+            overall = (0.15 * hwOverall) + (0.25 * midterms[0]) + (0.30 * final) + (0.35 * project);
         }
 
         //schema2 score
         else {
             //drop the midterm
-            overall = (0.4 * hwOverall) + (0.6 * final);
+            overall = (0.15 * hwOverall) + (0.50 * final) + (0.35 * project);
         }
     }
 
